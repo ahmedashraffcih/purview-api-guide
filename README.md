@@ -36,7 +36,7 @@ This guide consolidates community knowledge, real-world solutions, and productio
 ### 2. Installation
 
 ```bash
-git clone https://github.com/yourusername/purview-api-guide.git
+git clone https://github.com/ahmedashraffcih/purview-api-guide.git
 cd purview-api-guide
 pip install -r requirements.txt
 ```
@@ -173,8 +173,8 @@ Ways to contribute:
 
 ## Community & Support
 
-- **Issues**: [GitHub Issues](https://github.com/yourusername/purview-api-guide/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/purview-api-guide/discussions)
+- **Issues**: [GitHub Issues](https://github.com/ahmedashraffcih/purview-api-guide/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/ahmedashraffcih/purview-api-guide/discussions)
 - **Official Microsoft Docs**: [Microsoft Learn - Purview](https://learn.microsoft.com/en-us/purview/)
 
 ## License
@@ -195,4 +195,4 @@ Built by the community, for the community. Special thanks to all contributors wh
 
 ---
 
-**Star this repo** ⭐ if you find it helpful!
+If you find this guide helpful, please ⭐ star the repository and share it with others working with Purview APIs.
