@@ -1,0 +1,88 @@
+{
+  "entity": {
+    "typeName": "azure_sql_table",
+    "attributes": {
+      "name": "customers",
+      "qualifiedName": "mssql://your-server.database.windows.net/your-database/dbo/customers",
+      "description": "Customer master data table containing customer profiles and contact information",
+      "owner": "data-team@company.com",
+      "createTime": 1609459200000,
+      "updateTime": 1706832000000
+    },
+    "guid": "12345678-1234-1234-1234-123456789012",
+    "classifications": [
+      {
+        "typeName": "MICROSOFT.PERSONAL.NAME",
+        "attributes": {}
+      },
+      {
+        "typeName": "MICROSOFT.PERSONAL.EMAIL",
+        "attributes": {}
+      }
+    ],
+    "labels": [
+      "Production",
+      "CustomerData",
+      "Critical"
+    ],
+    "businessAttributes": {
+      "DataQuality": {
+        "completeness": "98%",
+        "accuracy": "95%",
+        "last_validated": "2026-02-01"
+      }
+    }
+  },
+  "referredEntities": {
+    "column-guid-001": {
+      "typeName": "azure_sql_column",
+      "attributes": {
+        "name": "customer_id",
+        "qualifiedName": "mssql://your-server.database.windows.net/your-database/dbo/customers#customer_id",
+        "data_type": "int",
+        "description": "Unique customer identifier (primary key)"
+      },
+      "guid": "column-guid-001"
+    },
+    "column-guid-002": {
+      "typeName": "azure_sql_column",
+      "attributes": {
+        "name": "email",
+        "qualifiedName": "mssql://your-server.database.windows.net/your-database/dbo/customers#email",
+        "data_type": "varchar(255)",
+        "description": "Customer email address"
+      },
+      "guid": "column-guid-002",
+      "classifications": [
+        {
+          "typeName": "MICROSOFT.PERSONAL.EMAIL"
+        }
+      ]
+    },
+    "column-guid-003": {
+      "typeName": "azure_sql_column",
+      "attributes": {
+        "name": "full_name",
+        "qualifiedName": "mssql://your-server.database.windows.net/your-database/dbo/customers#full_name",
+        "data_type": "varchar(200)",
+        "description": "Customer full name"
+      },
+      "guid": "column-guid-003",
+      "classifications": [
+        {
+          "typeName": "MICROSOFT.PERSONAL.NAME"
+        }
+      ]
+    },
+    "column-guid-004": {
+      "typeName": "azure_sql_column",
+      "attributes": {
+        "name": "created_date",
+        "qualifiedName": "mssql://your-server.database.windows.net/your-database/dbo/customers#created_date",
+        "data_type": "datetime",
+        "description": "Account creation timestamp"
+      },
+      "guid": "column-guid-004"
+    }
+  }
+}

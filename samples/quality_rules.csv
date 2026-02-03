@@ -1,0 +1,11 @@
+rule_name,rule_type,description,condition,column_name,severity
+Check Nulls - Customer ID,CustomSQL,Ensure customer_id has no NULL values,SELECT COUNT(*) FROM {table} WHERE customer_id IS NULL,customer_id,High
+Check Nulls - Email,CustomSQL,Ensure email has no NULL values,SELECT COUNT(*) FROM {table} WHERE email IS NULL,email,High
+Check Duplicates - Customer ID,CustomSQL,Ensure customer_id has no duplicates,SELECT customer_id FROM {table} GROUP BY customer_id HAVING COUNT(*) > 1,customer_id,Critical
+Email Format Validation,CustomSQL,Validate email format contains @ symbol,SELECT COUNT(*) FROM {table} WHERE email NOT LIKE '%@%',email,Medium
+Age Range Check,CustomSQL,Ensure age is between 0 and 120,SELECT COUNT(*) FROM {table} WHERE age < 0 OR age > 120,age,Medium
+Date Range Check,CustomSQL,Ensure created_date is not in the future,SELECT COUNT(*) FROM {table} WHERE created_date > GETDATE(),created_date,Medium
+Check Nulls - Transaction Amount,CustomSQL,Ensure amount has no NULL values,SELECT COUNT(*) FROM {table} WHERE amount IS NULL,amount,High
+Positive Amount Check,CustomSQL,Ensure transaction amounts are positive,SELECT COUNT(*) FROM {table} WHERE amount <= 0,amount,High
+Status Value Check,CustomSQL,Ensure status is valid value,SELECT COUNT(*) FROM {table} WHERE status NOT IN ('Active' 'Inactive' 'Pending'),status,Medium
+Phone Number Format,CustomSQL,Validate phone number format,SELECT COUNT(*) FROM {table} WHERE LEN(phone) < 10,phone,Low

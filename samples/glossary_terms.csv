@@ -1,0 +1,16 @@
+name,description,parent_term
+Data Quality,Measures ensuring data meets quality standards,
+Completeness,Measure of whether all required data is present,Data Quality
+Accuracy,Correctness and precision of data values,Data Quality
+Consistency,Data uniformity across systems and time,Data Quality
+Timeliness,Whether data is available when needed,Data Quality
+Validity,Data conformance to defined formats and rules,Data Quality
+Customer Metrics,Key performance indicators related to customers,
+Customer Lifetime Value,Total revenue expected from a customer over their lifetime,Customer Metrics
+Churn Rate,Percentage of customers who cancel or don't renew,Customer Metrics
+Net Promoter Score,Customer satisfaction and loyalty metric,Customer Metrics
+Customer Acquisition Cost,Average cost to acquire a new customer,Customer Metrics
+Revenue Metrics,Financial performance indicators,
+Annual Recurring Revenue,Predictable annual revenue from subscriptions,Revenue Metrics
+Monthly Recurring Revenue,Predictable monthly revenue from subscriptions,Revenue Metrics
+Average Revenue Per User,Mean revenue generated per user,Revenue Metrics
